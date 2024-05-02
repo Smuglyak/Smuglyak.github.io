@@ -1,0 +1,76 @@
+    /* Custom CSS */
+    body {
+      background-color: #0c333a; /* Background color for the entire page */
+      color: white;
+    }
+    a {
+      color: white !important;
+    }
+    a:hover {
+          text-decoration-color: transparent;
+    transition: all 0.2s ease;
+    will-change: transform;
+    text-decoration: underline;
+    }
+    header {
+      background-color: #0c333a;
+      color: white;
+      padding: 20px;
+      text-align: center;
+    }
+    .navbar {
+          padding: 40px 16px;
+    }
+    .card {
+      margin: 20px;
+      transition: transform 0.3s ease-in-out;
+    }
+    .card:hover {
+      transform: scale(1.05);
+    }
+    .footer {
+      background-color: #0c333a;
+      color: white;
+      padding: 20px;
+      text-align: center;
+    }
+    a {
+      text-decoration: none;
+      color: white;
+      font-weight: bold;
+    }
+    a:hover {
+  color: white;
+}
+    li {
+    list-style-type: none;
+}
+.container {
+      padding-left: calc(16px* 4);
+      padding-right: calc(16px* 4);
+      max-width: 1332px;
+      margin: 0 auto;
+}
+nav li a {
+    position: relative;
+    font-size: 18px;
+    line-height: 1;
+    font-weight: 600;
+    will-change: transform;
+    text-decoration: underline;
+    text-decoration-thickness: 1px;
+    text-underline-offset: 4px;
+    text-decoration-color: transparent;
+    transition: all 0.2s ease;
+}
+.social__item{
+      padding: 0.4rem 0;
+    margin: 0 36px;
+    margin-bottom: 6px;
+}
+.social__list{
+  display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
