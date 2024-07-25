@@ -1,56 +1,132 @@
-    /* Custom CSS */
-    body {
-      background-color: #0c333a; /* Background color for the entire page */
-      color: white;
-    }
-    a {
-      color: white !important;
-    }
-    a:hover {
-          text-decoration-color: transparent;
+/* Custom CSS */
+
+body {
+    background-color: #0c333a;
+    /* Background color for the entire page */
+    color: white;
+}
+
+html, body {
+  height: 100%;
+  margin: 0;
+}
+
+a {
+    color: white !important;
+}
+
+a:hover {
+    text-decoration-color: transparent;
     transition: all 0.2s ease;
     will-change: transform;
     text-decoration: underline;
-    }
-    header {
-      background-color: #0c333a;
-      color: white;
-      padding: 20px;
-      text-align: center;
-    }
-    .navbar {
-          padding: 40px 16px;
-    }
-    .card {
-      margin: 20px;
-      transition: transform 0.3s ease-in-out;
-    }
-    .card:hover {
-      transform: scale(1.05);
-    }
-    .footer {
-      background-color: #0c333a;
-      color: white;
-      padding: 20px;
-      text-align: center;
-    }
-    a {
-      text-decoration: none;
-      color: white;
-      font-weight: bold;
-    }
-    a:hover {
-  color: white;
 }
-    li {
+
+header {
+    background-color: #0c333a;
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+
+.navbar {
+    padding: 40px 16px;
+}
+
+.card {
+    margin: 20px;
+    transition: transform 0.3s ease-in-out;
+    height: 460px;
+    border-radius: 15px !important;
+    transform: translate(0);
+    box-shadow: 0px 4px 35px rgba(0, 0, 0, 0.08);
+    width: 358px;
+}
+
+.card-body {
+    padding: 0px !important;
+    display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+}
+
+.card:hover {
+    transform: scale(1.05);
+}
+
+.card-text {
+    margin-top: 10px;
+    /* Space between text and button */
+    max-height: 5.6em;
+    /* Limit text height (3 lines of text) */
+    overflow: hidden;
+    /* Hide overflow */
+    text-overflow: ellipsis;
+    /* Add ellipsis */
+    white-space: nowrap;
+    /* Prevent wrapping */
+    transition: max-height 0.3s ease-in-out;
+    /* Smooth transition */
+}
+
+.card-text.expanded {
+    max-height: none;
+    /* Remove max height */
+    white-space: normal;
+    /* Allow wrapping */
+}
+
+.card-container {
+    display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 20px;
+}
+
+.read-more-btn {
+    /* Space between text and button */
+    display: block;
+    /* Ensure button takes full width */
+    text-align: center;
+    /* Center text within button */
+    cursor: pointer;
+    /* Change cursor on hover */
+}
+
+.footer {
+    background-color: #0c333a;
+    color: white;
+    padding: 20px;
+    text-align: center;
+    padding: 50px;
+}
+
+a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+}
+
+a:hover {
+    color: white;
+}
+
+li {
     list-style-type: none;
 }
+
 .container {
-      padding-left: calc(16px* 4);
-      padding-right: calc(16px* 4);
-      max-width: 1332px;
-      margin: 0 auto;
+    padding-left: calc(16px * 4);
+    padding-right: calc(16px * 4);
+    max-width: 1332px;
+    margin: 0 auto;
 }
+
+.main-container {
+    display: grid;
+  grid-template-rows: 1fr auto;
+  height: 100vh;
+}
+
 nav li a {
     position: relative;
     font-size: 18px;
@@ -63,14 +139,33 @@ nav li a {
     text-decoration-color: transparent;
     transition: all 0.2s ease;
 }
-.social__item{
-      padding: 0.4rem 0;
+
+.social__item {
+    padding: 0.4rem 0;
     margin: 0 36px;
     margin-bottom: 6px;
 }
-.social__list{
-  display: flex;
+
+.social__list {
+    display: flex;
     justify-content: center;
     align-items: center;
     flex-wrap: wrap;
+}
+
+.image-wrapper {
+    max-width: 100%;
+    width: 450px;
+    /* Ensures the image doesn't exceed the width of its container */
+    overflow: hidden;
+    /* Hides any overflow from the image */
+}
+
+
+
+.container-content {
+    will-change: transform;
+    cursor: pointer;
+    padding: 36px 28px 28px 28px;
+    background-color: var(--white);
 }
